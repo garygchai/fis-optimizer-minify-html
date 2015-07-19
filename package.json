@@ -1,6 +1,6 @@
 {
   "name": "fis-optimizer-minify-html",
-  "description": "A optimizer for fis to compress inline js and css by using minify-html.",
+  "description": "A optimizer for fis to compress html inline js and css by using minify-html.",
   "version": "1.0.0",
   "author": {
     "name": "GaryGao",
@@ -11,6 +11,10 @@
     "fis", "minify-html"
   ],
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/garygchai/fis-optimizer-minify-html.git"
+  },
   "engines": {
     "node": ">= 0.8.0"
   },
