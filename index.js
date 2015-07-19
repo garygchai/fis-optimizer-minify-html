@@ -1,6 +1,6 @@
 /*
  * fis-optimizer-minify-html
- * v0.0.1
+ * v1.0.0
  * garygao
  * http://fanxing.com/
  */
@@ -9,12 +9,13 @@
 
 var UglifyJS = require('uglify-js');
 var CleanCss = require('clean-css');
+//匹配 <style></style>
+var styleReg = /(<style(?:(?=\s)[\s\S]*?["'\s\w\/\-]>|>))([\s\S]*?)(<\/style\s*>|$)/ig;
+//匹配 <script></script>
+var scriptReg = /(<script(?:(?=\s)[\s\S]*?["'\s\w\/\-]>|>))([\s\S]*?)(<\/script\s*>|$)/ig;
 
 module.exports = function(content, file, conf){console.log(conf)
-	//匹配 <style></style>
-    var styleReg = /(<style(?:(?=\s)[\s\S]*?["'\s\w\/\-]>|>))([\s\S]*?)(<\/style\s*>|$)/ig;
-    //匹配 <script></script>
-    var scriptReg = /(<script(?:(?=\s)[\s\S]*?["'\s\w\/\-]>|>))([\s\S]*?)(<\/script\s*>|$)/ig;
+	//修改配置
     conf.fromString = true;
     conf.processImport = false;
 
