@@ -17,6 +17,6 @@ npm install -g fis-optimizer-minify-html
 ```
 //fis-conf.js
 fis.config.set('modules.optimizer', {
-	html: 'uglify-html'
+	html: 'minify-html'
 });
 ```
