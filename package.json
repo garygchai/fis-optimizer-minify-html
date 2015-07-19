@@ -1,0 +1,27 @@
+{
+  "name": "fis-optimizer-minify-html",
+  "description": "A optimizer for fis to compress inline js and css by using minify-html.",
+  "version": "1.0.0",
+  "author": {
+    "name": "GaryGao",
+    "email": "garygchai@gmail.com"
+  },
+  "homepage": "http://fis.baidu.com/",
+  "keywords": [
+    "fis", "minify-html"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "dependencies": {
+    "uglify-js": "2.4.15",
+    "clean-css": "1.1.7"
+  },
+  "maintainers": [
+    {
+      "name": "garygao",
+      "email": "garygchai@gmail.com"
+    }
+  ]
+}
